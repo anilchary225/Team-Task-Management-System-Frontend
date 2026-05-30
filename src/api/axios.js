@@ -3,7 +3,7 @@ import axios from 'axios'
 // Prefer VITE_API_URL so the deployed environment controls the backend.
 // Fallback kept for local/preview usage.
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://team-task-management-system-backend.onrender.com/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://team-task-management-system-backend.onrender.com',
 })
 
 API.interceptors.request.use(config => {
